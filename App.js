@@ -24,6 +24,7 @@ const Stack = createNativeStackNavigator();
 import HomePage from './app/views/Homepage';
 import DetailPage from './app/views/DetailPage';
 import TestPage from './app/views/TestPage';
+import Game1 from './app/views/Game1/Game1'
 
 import MenuGroup from "./app/components/MenuGroup";
 
@@ -41,6 +42,7 @@ export default function App() {
   return (
     <NativeBaseProvider>
       <NavigationContainer>
+
           <Box
           _dark={{ bg: "blueGray.900" }}
           _light={{ bg: "blueGray.50" }}
@@ -60,6 +62,9 @@ export default function App() {
             </Stack.Screen>
             <Stack.Screen name="TestPage">
               {(props) => <TestPage {...props} />}
+            </Stack.Screen>
+            <Stack.Screen name="Game1">
+              {(props) => <Game1 {...props} />}
             </Stack.Screen>
           </Stack.Navigator>
 
