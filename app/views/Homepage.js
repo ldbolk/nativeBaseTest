@@ -11,7 +11,7 @@ import NativeBaseIcon from "../../app/components/NativeBaseIcon";
 import ToggleDarkMode from '../components/ToggleDarkMode'
 import MenuGroup from '../components/MenuGroup'
 
-function Homepage({ navigation }) {
+function Homepage() {
     return(
         <Center
         _dark={{ bg: "blueGray.900" }}

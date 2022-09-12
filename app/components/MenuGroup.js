@@ -8,12 +8,12 @@ function MenuGroup() {
     const navigation = useNavigation();
     return <Menu w="150" defaultIsOpen={false} trigger={triggerProps => { // bug; defaultisopen needs to be set to false otherwise downgrade nativebase
             return <Pressable {...triggerProps}>
-            <HamburgerIcon size='19' style={{ marginTop: 50, marginLeft: 15}} />
+            <HamburgerIcon size='19' style={{ marginTop: 50, marginLeft: 15 }} />
             </Pressable>;
         }}>
             <Menu.Group title="Information">
                 <Menu.Item onPress={() => navigation.navigate('HomePage')}>Home page</Menu.Item>
-                <Menu.Item onPress={() => navigation.navigate('DetailPage')}>DetailPage</Menu.Item>
+                <Menu.Item onPress={() => navigation.navigate('DetailPage')}>About</Menu.Item>
                 <Menu.Item onPress={() => navigation.navigate('TestPage')}>Test Page</Menu.Item>
             </Menu.Group>
             <Divider mt="3" w="100%" />

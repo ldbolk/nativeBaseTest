@@ -40,23 +40,31 @@ export const theme = extendTheme({ config });
 export default function App() {
   return (
     <NativeBaseProvider>
-    <NavigationContainer>
-      {/* <SafeAreaView style={ Styles.page }> */}
+      <NavigationContainer>
+          <Box
+          _dark={{ bg: "blueGray.900" }}
+          _light={{ bg: "blueGray.50" }}
+          px={4}
+          flex={1}>
+      
+        {/* <SafeAreaView style={ Styles.page }> */}
 
-        <MenuGroup style={Styles.page}/>
-      {/* </SafeAreaView> */}
-        <Stack.Navigator initialRouteName="HomePage" screenOptions={{headerShown: false}}>
-          <Stack.Screen name="HomePage">
-            {(props) => <HomePage {...props} />}
-          </Stack.Screen>
-          <Stack.Screen name="DetailPage">
-            {(props) => <DetailPage {...props} />}
-          </Stack.Screen>
-          <Stack.Screen name="TestPage">
-            {(props) => <TestPage {...props} />}
-          </Stack.Screen>
-        </Stack.Navigator>
-    </NavigationContainer>
+          <MenuGroup style={Styles.page}/>
+        {/* </SafeAreaView> */}
+          <Stack.Navigator initialRouteName="HomePage" screenOptions={{headerShown: false}}>
+            <Stack.Screen name="HomePage">
+              {(props) => <HomePage {...props} />}
+            </Stack.Screen>
+            <Stack.Screen name="DetailPage">
+              {(props) => <DetailPage {...props} />}
+            </Stack.Screen>
+            <Stack.Screen name="TestPage">
+              {(props) => <TestPage {...props} />}
+            </Stack.Screen>
+          </Stack.Navigator>
+
+          </Box>
+      </NavigationContainer>
     </NativeBaseProvider>
   );
 }
