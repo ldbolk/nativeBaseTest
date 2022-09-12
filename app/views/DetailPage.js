@@ -22,7 +22,7 @@ function DetailPage({ navigation }) {
         >
         <VStack space={5} alignItems="center">
           <Image source={ picture }/>
-          <Heading size="lg">Congrats, it loaded</Heading>
+          <Heading size="lg">Hi there, hello</Heading>
           <HStack space={2} alignItems="center">
             <Text>Gonna try making different modules on different pages so I suppose this'll be some kind of launcher but not really because 
               it'll be in the same app, might make some games on pages or something else. Anyhow, let's see how far we'll get

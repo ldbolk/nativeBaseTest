@@ -14,12 +14,16 @@ function MenuGroup() {
             <Menu.Group title="Information">
                 <Menu.Item onPress={() => navigation.navigate('HomePage')}>Home page</Menu.Item>
                 <Menu.Item onPress={() => navigation.navigate('DetailPage')}>About</Menu.Item>
-                <Menu.Item onPress={() => navigation.navigate('TestPage')}>Test Page</Menu.Item>
             </Menu.Group>
             <Divider mt="3" w="100%" />
             <Menu.Group title="Games">
                 <Menu.Item>Game 1</Menu.Item>
                 <Menu.Item>Game 2</Menu.Item>
+                <Menu.Item>Game 3</Menu.Item>
+            </Menu.Group>
+            <Menu.Group title="Category 3">
+                <Menu.Item>Stuff 1</Menu.Item>
+                <Menu.Item>Stuff 2</Menu.Item>
             </Menu.Group>
         </Menu>
     
