@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigation } from '@react-navigation/native' // Have to use this because you can't pass navigation into the menu (would work in a button tho)
 import { Box, Divider, HamburgerIcon, Menu, Pressable } from 'native-base'
-
+import ToggleDarkMode from './ToggleDarkMode';
 
 // Menu can have functions etc onOpen and onClose
 function MenuGroup() {
@@ -21,10 +21,16 @@ function MenuGroup() {
                 <Menu.Item>Game 2</Menu.Item>
                 <Menu.Item>Game 3</Menu.Item>
             </Menu.Group>
+            <Divider mt="3" w="100%" />
             <Menu.Group title="Category 3">
                 <Menu.Item>Stuff 1</Menu.Item>
                 <Menu.Item>Stuff 2</Menu.Item>
             </Menu.Group>
+            <Divider mt="3" w="100%" />
+            <Menu.Group title="Style">
+                <ToggleDarkMode />
+            </Menu.Group>
+
         </Menu>
     
 }

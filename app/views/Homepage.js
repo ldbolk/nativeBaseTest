@@ -30,7 +30,6 @@ function Homepage() {
               Lorem text
             </Text>
           {/* </Link> */}
-          <ToggleDarkMode />
         {/* <MenuGroup/>  */}
         {/* we don't pass on navigation into MenuGroup because it's not a single component; it has multiple routes */}
         </VStack>
