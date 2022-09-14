@@ -24,9 +24,13 @@ const Stack = createNativeStackNavigator();
 import HomePage from './app/views/Homepage';
 import DetailPage from './app/views/DetailPage';
 import TestPage from './app/views/TestPage';
-import Game1 from './app/views/Game1/Game1'
+import Game1 from './app/views/Game1/main'
+import Main from './app/views/Game2/Main'
+import Pokedex from './app/views/pokedex/Pokedex';
+import Details from './app/views/pokedex/Details'
 
 import MenuGroup from "./app/components/MenuGroup";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
 
 
 // Define the config
@@ -66,8 +70,17 @@ export default function App() {
             <Stack.Screen name="Game1">
               {(props) => <Game1 {...props} />}
             </Stack.Screen>
+            <Stack.Screen name="Game2">
+              {(props) => <Main {...props} />}
+            </Stack.Screen>
+            <Stack.Screen name="Pokedex">
+              {(props) => <Pokedex {...props} />}
+            </Stack.Screen>
+            <Stack.Screen name="Details">
+              {(props) => <Details {...props} />}
+            </Stack.Screen>
           </Stack.Navigator>
-
+          {/* Add a stack screen to the map screen */}
           </Box>
       </NavigationContainer>
     </NativeBaseProvider>

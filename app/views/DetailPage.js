@@ -12,6 +12,7 @@ import picture from '../../app/resources/images/cat.png'
 
 import { Image } from 'react-native'
 
+
 function DetailPage({ navigation }) {
     return(
         <Box
@@ -25,7 +26,8 @@ function DetailPage({ navigation }) {
           <Heading size="lg">Hi there, hello</Heading>
           <HStack space={2} alignItems="center">
             <Text>Gonna try making different modules on different pages so I suppose this'll be some kind of launcher but not really because 
-              it'll be in the same app, might make some games on pages or something else. Anyhow, let's see how far we'll get
+              it'll be in the same app, might make some games on pages or something else. Anyhow, let's see how far we'll get. So far Game1 
+              has a falling box! Innovative as ever.
             </Text>
           </HStack>
         {/* <MenuGroup/> */}

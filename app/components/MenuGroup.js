@@ -3,7 +3,7 @@ import { useNavigation } from '@react-navigation/native' // Have to use this bec
 import { Box, Divider, HamburgerIcon, Menu, Pressable } from 'native-base'
 import ToggleDarkMode from './ToggleDarkMode';
 
-import Game1 from '../views/Game1/Game1'
+import Game1 from '../views/Game1/main'
 
 // Menu can have functions etc onOpen and onClose
 function MenuGroup() {
@@ -20,14 +20,15 @@ function MenuGroup() {
             </Menu.Group>
             <Divider mt="3" w="100%" />
             <Menu.Group title="Games">
-                <Menu.Item onPress={() => navigation.navigate('Game1')}>Game 1</Menu.Item>
-                <Menu.Item>Game 2</Menu.Item>
+                <Menu.Item onPress={() => navigation.navigate('Game1')}>Boxes with gravity</Menu.Item>
+                <Menu.Item isDisabled="true" onPress={() => navigation.navigate('Game2')}>Kittens and dogs</Menu.Item>
                 <Menu.Item>Game 3</Menu.Item>
             </Menu.Group>
             <Divider mt="3" w="100%" />
-            <Menu.Group title="Category 3">
-                <Menu.Item>Stuff 1</Menu.Item>
+            <Menu.Group title="Misc">
+                <Menu.Item onPress={() => navigation.navigate('Pokedex')}>Pokedex</Menu.Item>
                 <Menu.Item>Stuff 2</Menu.Item>
+                {/* ^Add a Map link^ */}
             </Menu.Group>
             <Divider mt="3" w="100%" />
             <Menu.Group title="Style">
