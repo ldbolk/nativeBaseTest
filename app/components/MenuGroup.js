@@ -27,7 +27,7 @@ function MenuGroup() {
             <Divider mt="3" w="100%" />
             <Menu.Group title="Misc">
                 <Menu.Item onPress={() => navigation.navigate('Pokedex')}>Pokedex</Menu.Item>
-                <Menu.Item>Stuff 2</Menu.Item>
+                <Menu.Item onPress={() => navigation.navigate('Maps')}>Map</Menu.Item>
                 {/* ^Add a Map link^ */}
             </Menu.Group>
             <Divider mt="3" w="100%" />

@@ -28,6 +28,7 @@ import Game1 from './app/views/Game1/main'
 import Main from './app/views/Game2/Main'
 import Pokedex from './app/views/pokedex/Pokedex';
 import Details from './app/views/pokedex/Details'
+import Maps from './app/views/maps/maps'
 
 import MenuGroup from "./app/components/MenuGroup";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
@@ -78,6 +79,9 @@ export default function App() {
             </Stack.Screen>
             <Stack.Screen name="Details">
               {(props) => <Details {...props} />}
+            </Stack.Screen>
+          <Stack.Screen name="Maps">
+              {(props) => <Maps {...props} />}
             </Stack.Screen>
           </Stack.Navigator>
           {/* Add a stack screen to the map screen */}
